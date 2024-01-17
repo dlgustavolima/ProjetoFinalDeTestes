@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TestesDeUnidade/TestesDeUnidade/bin/Debug/net6.0
+/TestesDeUnidade/TestesDeUnidade/obj
+/TestesDeUnidade/TesteDeUnidade.Tests/obj
+/TestesDeUnidade/TesteDeUnidade.Tests/bin/Debug/net6.0
+/Features/Features/Features/obj
+/Features/Features/Features/bin/Debug/net6.0
+/Features/Features.Tests/Features.Tests/bin/Debug/net6.0
+/Features/Features.Tests/Features.Tests/obj
+/.vs/ProjetoFinalDeTestes
