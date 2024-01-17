@@ -11,3 +11,5 @@
 /Features/Features.Tests/Features.Tests/bin/Debug/net6.0
 /Features/Features.Tests/Features.Tests/obj
 /.vs/ProjetoFinalDeTestes
+TestesDeUnidade/TesteDeUnidade.Tests/bin/Release/net6.0/CoverletSourceRootsMapping
+.vs/slnx.sqlite
