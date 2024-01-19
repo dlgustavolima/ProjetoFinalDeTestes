@@ -13,3 +13,4 @@
 /.vs/ProjetoFinalDeTestes
 TestesDeUnidade/TesteDeUnidade.Tests/bin/Release/net6.0/CoverletSourceRootsMapping
 .vs/slnx.sqlite
+/.vs

@@ -24,10 +24,12 @@ namespace Features.Jogos
         {
         }
 
-        public Jogo(string nome, string descricao, bool ativo, decimal valor, int unidade, DateTime dataLancamento)
+        public Jogo(Guid id, string nome, string descricao, string emailProdutora, bool ativo, decimal valor, int unidade, DateTime dataLancamento)
         {
+            Id = id;
             Nome = nome;
             Descricao = descricao;
+            EmailProdutora = emailProdutora;
             Ativo = ativo;
             Valor = valor;
             Unidade = unidade;
@@ -60,20 +62,20 @@ namespace Features.Jogos
 
             RuleFor(c => c.DataLancamento)
                 .NotEmpty()
-                .Must(HaveMinimumAge)
-                .WithMessage("O cliente deve ter 18 anos ou mais");
+                .Must(HaveMaxAge)
+                .WithMessage("A data de lançamento não pode ser maior a 10 anos");
 
             RuleFor(c => c.Valor)
                 .NotEmpty()
-                .LessThan(0);
+                .GreaterThan(0);
 
             RuleFor(c => c.Id)
                 .NotEqual(Guid.Empty);
         }
 
-        public static bool HaveMinimumAge(DateTime dataLancamento)
+        public static bool HaveMaxAge(DateTime dataLancamento)
         {
-            return dataLancamento <= DateTime.Now.AddYears(-18);
+            return dataLancamento <= DateTime.Now.AddYears(10);
         }
     }
 }
