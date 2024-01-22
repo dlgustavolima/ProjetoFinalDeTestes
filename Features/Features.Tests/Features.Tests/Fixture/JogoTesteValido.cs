@@ -16,6 +16,7 @@ namespace Features.Tests.Fixture
         [Trait("Categoria", "Jogo Teste Fixture")]
         public void Jogo_NovoJogo_JogoDeveEstarValido()
         {
+            //Arrange
             var jogo = _jogosTestsFixture.GerarJogoValido();
 
             // Act
